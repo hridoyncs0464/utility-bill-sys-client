@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import useTitle from "../Components/usetTitle";
 
+
 const Notfound = () => {
     useTitle("Page Not Found");
   return (
@@ -26,4 +27,5 @@ const Notfound = () => {
   );
 };
 
+                        
 export default Notfound;
