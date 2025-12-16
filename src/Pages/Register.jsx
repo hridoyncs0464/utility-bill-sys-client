@@ -80,7 +80,7 @@ const Register = () => {
           image: user.photoURL,
         };
 
-        return fetch("http://localhost:3100/users", {
+        return fetch("https://utility-bill-sys-server.vercel.app/users", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(newUser),

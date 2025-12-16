@@ -40,7 +40,7 @@ const [editBill, setEditBill] = useState(null);
 
   const fetchBills = async () => {
     try {
-      const res = await fetch(`http://localhost:3100/my-pay-bills?email=${user.email}`);
+      const res = await fetch(`https://utility-bill-sys-server.vercel.app/my-pay-bills?email=${user.email}`);
       
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
@@ -83,7 +83,7 @@ const [editBill, setEditBill] = useState(null);
       confirmButtonText: "Yes, delete it",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3100/my-pay-bills/${id}`, {
+        fetch(`https://utility-bill-sys-server.vercel.app/my-pay-bills/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -99,7 +99,7 @@ const [editBill, setEditBill] = useState(null);
   const handleUpdate = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:3100/my-pay-bills/${editBill._id}`, {
+    fetch(`https://utility-bill-sys-server.vercel.app/my-pay-bills/${editBill._id}`, {
       method: "PATCH",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(editBill),

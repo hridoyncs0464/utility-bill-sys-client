@@ -64,7 +64,7 @@ const router = createBrowserRouter([
       {
         path: "bills/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3100/bills/${params.id}`),
+          fetch(`https://utility-bill-sys-server.vercel.app/bills/${params.id}`),
         element:
         <PrivateRoute>
          <BillDetails />
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
       },
       {
         path: "all-bills",
-        loader: () => fetch("http://localhost:3100/all-bills"),
+        loader: () => fetch("https://utility-bill-sys-server.vercel.app/all-bills"),
         element: <AllBills />,
       },
       {

@@ -4,7 +4,7 @@ import Recentbills from "./Recentbills";
 import useTitle from "../Components/usetTitle";
 import WhyChooseUs from "../Components/WhyChooseUs";
 import HowItWorks from "../Components/HowItWorks";
-const RecentbillsPromise =  fetch('http://localhost:3100/recent-bills').then(res => res.json());
+const RecentbillsPromise =  fetch('https://utility-bill-sys-server.vercel.app/recent-bills').then(res => res.json());
 
 const Home = () => {
  useTitle("Home");
@@ -34,7 +34,7 @@ const Home = () => {
                   View Bills
                 </NavLink>
               </div>
-            </div>
+            </div>   
 
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" className="btn btn-circle">❮</a>

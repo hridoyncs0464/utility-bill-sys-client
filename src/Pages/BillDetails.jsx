@@ -43,7 +43,7 @@ const BillDetails = () => {
       additionalInfo: form.additionalInfo.value,
     } 
     
-    fetch(`http://localhost:3100/pay-bills`, {
+    fetch(`https://utility-bill-sys-server.vercel.app/pay-bills`, {
   method: "POST",
   headers: { "content-type": "application/json" },
   body: JSON.stringify(payData),
