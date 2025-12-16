@@ -20,7 +20,7 @@ const Register = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/"; // redirect after registration
-
+                                         
   const validatePassword = (password) => {
     const errors = [];
     if (password.length < 6) errors.push("Password must be at least 6 characters long");
@@ -48,6 +48,10 @@ const Register = () => {
       return;
     }
 
+
+
+
+    
     const errors = validatePassword(password);
     if (errors.length > 0) {
       setPasswordErrors(errors);

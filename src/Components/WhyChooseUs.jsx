@@ -8,6 +8,9 @@ const WhyChooseUs = () => {
           Why Choose <span className="text-primary">PayBill</span>?
         </h2>
 
+
+
+
         <div className="grid md:grid-cols-4 gap-6">
           <div className="card bg-base-200 p-6 text-center shadow">
             <h3 className="font-semibold text-lg mb-2">Secure Payments</h3>
