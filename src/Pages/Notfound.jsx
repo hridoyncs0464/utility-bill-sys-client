@@ -17,7 +17,7 @@ const Notfound = () => {
           to="/"
           className="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-lg shadow hover:bg-green-600 transition duration-300"
         >
-          Go Back Home
+          Go Back Home          
         </Link>
       </div>
       <p className="mt-6 text-gray-500 text-sm">
