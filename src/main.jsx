@@ -20,6 +20,17 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
