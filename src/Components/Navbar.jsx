@@ -3,6 +3,8 @@ import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../AuthContext/AuthContext";
 import useTitle from "./usetTitle";
 
+
+
 const Navbar = () => {
     useTitle("Navbar");
   const { user, logOutUser } = use(AuthContext);
@@ -107,3 +109,22 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
