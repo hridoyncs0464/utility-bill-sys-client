@@ -10,12 +10,12 @@ import {
   signOut,
   signInWithEmailAndPassword,
   GoogleAuthProvider,
-  signInWithPopup,
+  signInWithPopup,                      
 } from "firebase/auth";
 import { AuthContext } from "./AuthContext";
 ;
 const googleProvider  = new GoogleAuthProvider()
-
+                               
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
