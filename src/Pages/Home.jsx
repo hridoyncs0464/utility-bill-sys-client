@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* ===== Banner Carousel Section ===== */}
+    
       <section className="max-w-7xl mx-auto px-4 mt-3">
         <div className="carousel w-full h-[420px] rounded-xl overflow-hidden">
 
@@ -69,7 +69,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* ===== Slide 3 ===== */}
+                                           
           <div id="slide3" className="carousel-item relative w-full">
             <img
               src="https://images.unsplash.com/photo-1571867424488-4565932edb41?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fG9ubGluZSUyMHBheXxlbnwwfHwwfHx8MA%3D%3D"
