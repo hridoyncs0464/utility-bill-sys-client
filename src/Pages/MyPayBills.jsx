@@ -95,7 +95,8 @@ const [editBill, setEditBill] = useState(null);
     });
   };
 
-  // ================= UPDATE =================
+
+
   const handleUpdate = (e) => {
     e.preventDefault();
 
