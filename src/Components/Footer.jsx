@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-
+                                  
 const Footer = () => {
   return (
     <footer className="bg-base-200 text-base-content">

@@ -10,7 +10,7 @@ const Loading = ({ message = "Loading bills, please wait..." }) => {
       {/* Title */}
       <h2 className="text-xl font-semibold text-primary">
         Utility Bill Management System
-      </h2>
+      </h2>                         
 
       {/* Subtitle */}
       <p className="text-sm text-gray-500 dark:text-gray-400">

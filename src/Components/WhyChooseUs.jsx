@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
               Your bill payments are protected with secure authentication and
               verified user access.
             </p>
-          </div>
+          </div>                              
 
           <div className="card bg-base-200 p-6 text-center shadow">
             <h3 className="font-semibold text-lg mb-2">Current Month Control</h3>

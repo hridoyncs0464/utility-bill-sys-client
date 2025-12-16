@@ -7,7 +7,7 @@ const HowItWorks = () => {
         <h2 className="text-3xl font-bold text-center mb-10">
           How <span className="text-primary">PayBill</span> Works
         </h2>
-
+                                       
         <div className="grid md:grid-cols-4 gap-6">
           <div className="card bg-base-100 p-6 text-center shadow">
             <span className="text-primary text-3xl font-bold">1</span>

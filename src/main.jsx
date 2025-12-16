@@ -16,51 +16,9 @@ import Loading from "./Components/Loding.jsx";
 import AllBills from "./Pages/AllBills.jsx";
 import Notfound from "./Pages/Notfound.jsx";
 import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
+         
 
 
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     Component: RootLayout,
-//     children: [
-//       {
-//         index: true,
-//         Component: Home,
-//       },
-//       {
-//         path: "bills",
-//         Component: Bills,
-//       },
-//       {
-//         path: "login",
-//         Component: Login,
-//       },
-//       {
-//         path: "register",
-//         Component: Register,
-//       },
-//       {
-//         path:'my-pay-bills',
-//         // Component:MyPayBills
-//         element:<MyPayBills></MyPayBills>
-      
-//       },
-//       {
-//         path:"bills/:id",
-//         loader:({params}) => fetch(`http://localhost:3100/bills/${params.id}`),
-//         Component:BillDetails
-//       },
-//       {
-//         path:'/all-bills',
-//         loader:() => fetch("http://localhost:3100/all-bills"),
-//         Component:AllBills,
-        
-//       }
-     
-//     ],
-//   },
-// ]);
 
 const router = createBrowserRouter([
   {

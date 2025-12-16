@@ -85,7 +85,7 @@ const Navbar = () => {
               <div className="bg-primary text-primary-content rounded-full w-8 h-8 flex items-center justify-center">
                 <span className="text-xs">{user?.email?.charAt(0).toUpperCase() || "U"}</span>
               </div>
-            </div>
+            </div>                               
 
             <button onClick={handleLogout} className="btn btn-sm btn-ghost">
               Logout
