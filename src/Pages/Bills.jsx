@@ -15,16 +15,16 @@ const Bills = ({ recentBill }) => {
     amount,
     image
   } = recentBill;
-
+               
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
 
       {/* Image */}
-      <img
+      {/* <img
         src={image}
         alt={title}
         className="h-44 w-full object-cover"
-      />
+      /> */}
 
       <div className="p-5">
         <h3 className="text-lg font-semibold mb-2">
