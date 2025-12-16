@@ -53,7 +53,7 @@ const Bills = ({ recentBill }) => {
         >
           See Details
         </Link>
-      </div>
+      </div>                      
     </div>
   );
 };
