@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from "react-router";
-                                  
+                  
+
+
 const Footer = () => {
+
+
   return (
+
+    
     <footer className="bg-base-200 text-base-content">
       <div className="max-w-7xl mx-auto p-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & Description */}
@@ -54,7 +60,8 @@ const Footer = () => {
           </ul>
         </nav>
 
-        {/* Support */}
+       
+       
         <nav>
           <h6 className="footer-title mb-2">Support</h6>
           <ul className="flex flex-col gap-1">
