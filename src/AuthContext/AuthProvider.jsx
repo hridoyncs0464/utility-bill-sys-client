@@ -1,4 +1,6 @@
 
+
+
 import React, { useEffect, useState } from "react";
 // import { AuthContex } from "./AuthContex";
 import { auth } from "../Firebase/firebase.init";
@@ -32,6 +34,9 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signOut(auth);
   };
+
+
+
 
 
   const signInWithGoogle = ()=>{
