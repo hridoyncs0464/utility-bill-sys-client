@@ -1,13 +1,14 @@
 # Utility Bill Management System
 
-🎯 **Project Theme:**
+![Project Banner](https://images.unsplash.com/photo-1591696205602-89a7e208bfa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8dGVhbHxlbnwwfHx8fDE2OTgyNzU3MDk&ixlib=rb-4.0.3&q=80&w=1080)
+
+🎯 **Project Theme:**  
 The Utility Bill Management System is a **MERN Stack-based web application** that allows users to view, manage, and pay monthly utility bills such as **Electricity, Gas, Water, and Internet**. Users can securely log in, pay only the current month bills, and update their bill information. The system also features **responsive UI, search/display functionalities, and PDF report download** for users’ paid bill history.
 
 ---
 
 ## 🔗 Live Website
-
-https://payutilitybill.web.app/
+[Click here to visit](https://payutilitybill.web.app/)
 
 ---
 
@@ -25,14 +26,12 @@ https://payutilitybill.web.app/
 ## 🏗️ Layout Structure
 
 * **Navbar:**
-
   * Before Login: Logo | Home | Bills | Login | Register
   * After Login: Logo | Home | Bills | My Pay Bills | Profile Avatar | Logout
 
 * **Main Section:** Dynamic routing with React Router for different pages.
 
 * **Footer:**
-
   * Logo / Site Name
   * Short Description
   * Copyright
@@ -43,30 +42,25 @@ https://payutilitybill.web.app/
 ## 🏠 Pages & Functionalities
 
 ### Home Page (Public)
-
 * Banner section with an image slider/carousel.
 * 4 category cards: Electricity, Gas, Water, Internet.
 * Recent 6 bills displayed dynamically from MongoDB.
 * Two additional meaningful sections for more information.
 
 ### Authentication
-
 * **Login Page:** Email, Password, Forget Password, and Social Google login.
 * **Registration Page:** Name, Email, Photo-URL, Password with validation (Uppercase, Lowercase, Minimum 6 characters).
 
 ### Bills Page (Public)
-
 * Display all bills in a 3-column grid.
 * Filter bills by category dynamically without page reload.
 * “See Details” button navigates to bill details page.
 
 ### Bill Details Page (Private)
-
 * Shows title, category, location, description, image, amount, date.
 * **Pay Bill Button:** Enabled only for current month bills, opens a modal with pre-filled form.
 
 ### My Paid Bills Page (Private)
-
 * Displays bills paid by the logged-in user in a table.
 * Update and Delete functionalities with modals.
 * Download PDF report of paid bills with **total amount** summary.
@@ -86,7 +80,6 @@ https://payutilitybill.web.app/
 ## 📂 Database Structure (MongoDB)
 
 ### Bills Collection
-
 ```json
 {
   "title": "Frequent Power Outage in Mirpur",
@@ -98,11 +91,7 @@ https://payutilitybill.web.app/
   "date": "2025-10-26",
   "amount": 260
 }
-```
-
-### MyBills Collection
-
-```json
+MyBills Collection
 {
   "billsId": "abc123",
   "username": "Mr. X",
@@ -112,33 +101,60 @@ https://payutilitybill.web.app/
   "amount": 260,
   "date": "2025-10-26"
 }
-```
 
----
+🏃‍♂️ How to Run Locally
+Client
 
-## 💻 GitHub Commits
+Clone the repository:
 
-* **Client Side:** 15+ notable commits
-* **Server Side:** 8+ notable commits
+git clone https://github.com/username/B12-A10-Category-0010.git
 
----
 
-## 📌 Notes
+Navigate to client folder:
 
-* No Lorem Ipsum text used anywhere.
-* All CRUD actions use toast notifications or SweetAlert for better UX.
-* Application hosted using **Netlify/Firebase (client)** and **Vercel (server)**.
+cd client
 
----
 
-## ⚡ Resources & Inspiration
+Install dependencies:
 
-* [UI & Components](https://uiverse.io/)
-* [Free Images & Resources](https://devmeetsdevs.com/)
-* [UX Design Inspiration](https://bootcamp.uxdesign.cc/free-images-and-resources-collection-for-website-c77f2fc46ce5)
-* [ThemeForest Templates](https://themeforest.net/)
-* [CodeCanyon Scripts](https://codecanyon.net/)
+npm install
 
----
 
-**Made with ❤️ by [Hridoy]**
+Create .env file with Firebase config & API base URL:
+
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+REACT_APP_API_BASE_URL=http://localhost:5000
+
+
+Start client:
+
+npm start
+
+
+Open http://localhost:3000
+ in your browser.
+
+Server
+
+Navigate to server folder:
+
+cd server
+
+
+Install dependencies:
+
+npm install
+
+
+Create .env file with:
+
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+
+
+Start server:
+
+npm run dev
+
