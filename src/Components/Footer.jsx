@@ -88,11 +88,13 @@ const Footer = () => {
           <h6 className="footer-title mb-2">Legal</h6>
           <ul className="flex flex-col gap-1">
             <li>
-              <a className="link link-hover">Terms of Service</a>
-            </li>
+<Link to="/terms" className="link link-hover">
+  Terms of Service
+</Link>            </li>
             <li>
-              <a className="link link-hover">Privacy Policy</a>
-            </li>
+<Link to="/privacy" className="link link-hover">
+  Privacy Policy
+</Link>            </li>
           </ul>
         </nav>
       </div>

@@ -1,11 +1,9 @@
-import { useEffect } from "react"
-import MyPayBills from "../Pages/MyPayBills";
+import { useEffect } from "react";
 
-const useTitle = (title) =>{
-    useEffect(()=>{
-        document.title = `${title}` | MyPayBills ;
-
-    },[title]);
+const useTitle = (title) => {
+  useEffect(() => {
+    document.title = `${title} | PayBill`;
+  }, [title]);
 };
 
-export default useTitle;                              
+export default useTitle;

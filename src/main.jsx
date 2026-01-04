@@ -16,18 +16,21 @@ import Loading from "./Components/Loding.jsx";
 import AllBills from "./Pages/AllBills.jsx";
 import Notfound from "./Pages/Notfound.jsx";
 import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
+import DashboardLayout from "./Layouts/DashboardLayout.jsx";
+import DashboardOverview from "./Pages/DashboardOverview.jsx";
+import DashboardBills from "./Pages/DashboardBills.jsx";
+import Profile from "./Pages/Profile.jsx";
+import About from "./Pages/About.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Privacy from "./Pages/Privacy.jsx";
+import Terms from "./Pages/Terms.jsx";
+import Help from "./Pages/Help.jsx";
+// import Dashboard from "./Pages/Dashboard.jsx";
+// import DashboardOverview from "./Layouts/DashboardLayout.jsx";
          
 
-
-
-
-
-
-
-
-
-
-
+const savedTheme = localStorage.getItem("theme") || "light";
+document.documentElement.setAttribute("data-theme", savedTheme);
 
 
 
@@ -53,7 +56,26 @@ const router = createBrowserRouter([
         element: <Register />,
       },
 
-
+ {
+    path: "about",
+    element: <About />,
+  },
+  {
+    path: "contact",
+    element: <Contact />,
+  },
+  {
+    path: "privacy",
+    element: <Privacy />,
+  },
+{
+  path: "terms",
+  element: <Terms />,
+},
+{
+  path: "help",
+  element: <Help />,
+},
 
       {
         path: "my-pay-bills",
@@ -61,6 +83,35 @@ const router = createBrowserRouter([
           <MyPayBills />
         </PrivateRoute>
       },
+
+{
+  path: "dashboard",
+  element: (
+    <PrivateRoute>
+      <DashboardLayout />
+    </PrivateRoute>
+  ),
+  children: [
+    {
+      index: true,
+      element: <DashboardOverview />,
+    },
+    {
+      path: "bills",
+      element: <DashboardBills />,
+    },
+  ],
+},
+ {
+  path: "profile",
+  element: (
+    <PrivateRoute>
+      <Profile/>
+    </PrivateRoute>
+  ),
+},
+
+
       {
         path: "bills/:id",
         loader: ({ params }) =>

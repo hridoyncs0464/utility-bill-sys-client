@@ -5,7 +5,7 @@ import { AuthContext } from "../AuthContext/AuthContext";
 import useTitle from "../Components/usetTitle";
 
 const Login = () => {
-    useTitle("Login");
+useTitle("Login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

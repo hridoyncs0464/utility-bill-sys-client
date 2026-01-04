@@ -7,13 +7,20 @@ import Footer from '../Components/Footer';
 
 const RootLayout = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
-             <Navbar></Navbar>
-             <Outlet></Outlet>
-             {/* <WhyChooseUs></WhyChooseUs>
-             <HowItWorks></HowItWorks> */}
-             <Footer></Footer> 
+      
+      <>
+      <Navbar />
+
+      {/* Page Content */}
+      <main className="pt-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <Outlet />
         </div>
+      </main>
+
+      {/* Full-width Footer */}
+      <Footer />
+    </>
     );
 };
 

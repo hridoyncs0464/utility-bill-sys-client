@@ -13,7 +13,7 @@ const Recentbills = ({ RecentbillsPromise }) => {
           Recent <span className="text-primary">Bills</span>
         </h2>
  
-        <p className="text-center font-bold text-2xl text-gray-600 mb-8">
+        <p className="text-center font-bold text-2xl text-base-content/70 mb-8">
           Latest utility bills added to the system
         </p>
 

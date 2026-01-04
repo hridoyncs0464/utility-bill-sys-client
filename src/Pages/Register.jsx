@@ -4,7 +4,7 @@ import { AuthContext } from "../AuthContext/AuthContext";
 import useTitle from "../Components/usetTitle";
 
 const Register = () => {
-    useTitle("Register");
+useTitle("Register");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,7 +51,7 @@ const Register = () => {
 
 
 
-    
+
     const errors = validatePassword(password);
     if (errors.length > 0) {
       setPasswordErrors(errors);
@@ -77,7 +77,7 @@ const Register = () => {
     signInWithGoogle()
       .then((result) => {
         const user = result.user;
-        // console.log(user);
+        console.log(user);
         const newUser = {
           name: user.displayName,
           email: user.email,

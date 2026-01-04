@@ -12,7 +12,7 @@ import Loading from "../Components/Loding";
 import useTitle from "../Components/usetTitle";
 
 const MyPayBills = () => {
-    useTitle("My Pay Bills");
+useTitle("My Pay Bills");
   const { user } = useContext(AuthContext);
 
   const [bills, setBills] = useState([]);
